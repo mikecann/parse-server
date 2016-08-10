@@ -8,7 +8,7 @@ import defaults from '../defaults';
 export default class SchemaCache {
   cache: Object;
 
-  constructor(cacheController, ttl = defaults.schemaCacheTTL) {
+  constructor(cacheController, ttl = 5) {
     this.ttl = ttl;
     if (typeof ttl == 'string') {
       this.ttl = parseInt(ttl);
