@@ -3,7 +3,6 @@ const SCHEMA_CACHE_PREFIX = "__SCHEMA";
 const ALL_KEYS = "__ALL_KEYS";
 
 import { randomString } from '../cryptoUtils';
-import defaults from '../defaults';
 
 export default class SchemaCache {
   cache: Object;
