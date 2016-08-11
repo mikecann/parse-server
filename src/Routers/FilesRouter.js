@@ -78,7 +78,7 @@ export class FilesRouter {
       res.set('Location', result.url);
       res.json(result);
     }).catch((err) => {
-      next(new Parse.Error(Parse.Error.FILE_SAVE_ERROR, 'Could not store file.'));
+      next(new Parse.Error(Parse.Error.FILE_SAVE_ERROR, 'Could not store file. Error: '+err));
     });
   }
 
